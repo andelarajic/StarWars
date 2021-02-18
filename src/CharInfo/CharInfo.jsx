@@ -1,30 +1,44 @@
 import { Component } from 'react';
-import{people} from "../List/List"
 
 
-class Charinfo extends Component {
+class CharInfo extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            expanded: false,
+
+      this.state = {
+            expanded:false,
         }
+        this.open = this.open.bind(this);
+        this.close = this.open.bind(this);
     }
-open (){
-    console.log("hwj")
-    this.setState({expanded:!this.state.expanded})
-}
-close (){
-    this.setState({expanded:!this.state.expanded})
-}
+    open (){
+        this.setState({expanded:!this.state.expanded})
+    }
+    close (){
+        this.setState({expanded:!this.state.expanded})
+    }
+    render(){
+        const info = this.props.CharInfo;
+     
+        if(!this.state.expanded){
+            
+            return  <h1 className="Char" onClick={this.open} >Open</h1>
+        }
+  
 
-
-    render() {
- 
-        return (
+        return(
             <div>
-
+                <p onClick={this.close}>Hide</p>
+                <ul>
+                    <li><h2>Gender: {info.gender}</h2></li>
+                    <li><h2>Birth date: {info.birth_year} </h2></li>
+                    <li><h2>Eye color: {info.eye_color}</h2></li>
+                    <li><h2>Hair color: {info.hair_color}</h2></li>
+                </ul>
             </div>
-        )}
-    }
+        
 
-            export default Charinfo;
+    )}
+}
+
+    export default CharInfo;

@@ -18,6 +18,7 @@ class App extends Component {
     })
   }
 
+
 componentDidMount(){
   this.getPeople()
 }
@@ -26,6 +27,8 @@ componentDidMount(){
     const {people} = this.state; 
   return (
     <div className="App">
+
+
      <List people={people}/>
     </div>
   );
