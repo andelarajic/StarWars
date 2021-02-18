@@ -2,8 +2,8 @@ import { Component } from 'react';
 import CharInfo from "../CharInfo/CharInfo"
 
 class List extends Component {
-    render() {
-        const people = this.props.people; 
+    render(){
+        const people = this.props.people;
       return (
         <div className="List">
          {
@@ -11,15 +11,15 @@ class List extends Component {
                 console.log(p)
                 return(
                     <div key= {p.url}>
-                    <h1 className="characters" >{p.name}</h1>
-                    <CharInfo charInfo={p} />
+                    <h1 className="CharName" onClick={this.open} >{p.name}</h1>
+                   <CharInfo CharInfo={p}/>
                     </div>
                 )
             } )
          }
         </div>
       );
-    }
+        }
     }
     export default List;
     
