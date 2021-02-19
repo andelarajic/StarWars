@@ -2,7 +2,7 @@ import axios from "axios"
 import { Component } from 'react';
 import './App.css';
 import List from "../src/List/List"
-import SearchInput from "./SearchInput/SearchInput"
+import Background from "../src/Images/StarWars.jpg"
 
 class App extends Component {
   constructor(props) {
@@ -32,10 +32,10 @@ componentDidMount(){
     const {people} = this.state; 
   return (
     <div className="App">
-  
-  <input className="Input1" type="text" placeholder="Enter Name" onChange={(e) => this.getPeople(e.target.value)} />
-<SearchInput/>
-     <List people={people}/>
+    
+       <img className="Image" src={Background} alt="Game websida"></img>
+  <input className="Input" type="text" placeholder="Enter Name" onChange={(e) => this.getPeople(e.target.value)} />
+  <List people={people}/>
     </div>
   );
 }

@@ -30,10 +30,10 @@ class CharInfo extends Component {
             <div>
                 <p onClick={this.close}>Hide</p>
                 <ul>
-                    <li><h2>Gender: {info.gender}</h2></li>
-                    <li><h2>Birth date: {info.birth_year} </h2></li>
-                    <li><h2>Eye color: {info.eye_color}</h2></li>
-                    <li><h2>Hair color: {info.hair_color}</h2></li>
+                    <li className="unstyled"><h2>Gender: {info.gender}</h2></li>
+                    <li className="unstyled"><h2>Birth date: {info.birth_year} </h2></li>
+                    <li className="unstyled"><h2>Eye color: {info.eye_color}</h2></li>
+                    <li className="unstyled"><h2>Hair color: {info.hair_color}</h2></li>
                 </ul>
             </div>
         
