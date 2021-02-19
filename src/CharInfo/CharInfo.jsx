@@ -22,13 +22,12 @@ class CharInfo extends Component {
      
         if(!this.state.expanded){
             
-            return  <h1 className="Char" onClick={this.open} >Open</h1>
+            return <h1 className="Char" onClick={this.open}>{info.name}</h1>
         }
   
-
         return(
             <div>
-                <p onClick={this.close}>Hide</p>
+                <h1 className="Char" onClick={this.close}>{info.name}</h1>
                 <ul>
                     <li className="unstyled"><h2>Gender: {info.gender}</h2></li>
                     <li className="unstyled"><h2>Birth date: {info.birth_year} </h2></li>
