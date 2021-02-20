@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import "../CharInfo/CharInfo.css"
 
 
 class CharInfo extends Component {

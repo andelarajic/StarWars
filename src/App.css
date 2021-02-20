@@ -1,12 +1,36 @@
 .App {
-  height: 100%;
+  margin:0;
+  
+}
+.Image {
+  background-image: url(/src/Images/StarWars.jpg) ;
+margin-bottom: -20px;
+  
+  
+
+ 
 }
 
 .Input {
+  text-align: center;
+ background: rgba(255,255,255,0.4);
+  border: none;
   position: relative;
-  top:-1000px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
- 
+  outline: none;
+  width: 400px;
+  height: 30p;
+  top: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #FFE81F;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  font-family: Freeform serifs;
+  font-size: 15px;
+}
+::placeholder {
+  color: #FFE81F;
+  font-size: 15px;
+  font-family: Freeform serifs;
 }

@@ -2,7 +2,7 @@ import axios from "axios"
 import { Component, useState } from 'react';
 import './App.css';
 import List from "../src/List/List"
-import Background from "../src/Images/StarWars.jpg"
+
 
 class App extends Component {
   constructor(props) {
@@ -33,9 +33,10 @@ componentDidMount(){
 
     return (
       <div className="App">
-        <img className="Image" src={Background} alt="Game websida"></img>
+        <div className="Image">
         <input className="Input" type="text" placeholder="Enter Name" onChange={(e) => this.setState({ search: e.target.value }) } />
         <List people={filterListOfPeople(this.state.people, this.state.search)}/>
+      </div>
       </div>
     );
   }
