@@ -23,4 +23,4 @@ Andela Rajic <br/>
 Github - https://github.com/andelarajic <br/>
 LinkdIn - https://www.linkedin.com/in/andelarajic/ <br/>
 
-Project link - https://star-wars-2077f.web.app
+Project link - https://star-wars-e020c.web.app
