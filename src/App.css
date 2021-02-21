@@ -5,10 +5,7 @@
 .Image {
   background-image: url(/src/Images/StarWars.jpg) ;
 margin-bottom: -20px;
-  
-  
 
- 
 }
 
 .Input {
@@ -33,4 +30,10 @@ margin-bottom: -20px;
   color: #FFE81F;
   font-size: 15px;
   font-family: Freeform serifs;
+}
+
+@media (max-width:500px) {
+  .Input {
+    width: 190px;
+  }
 }
